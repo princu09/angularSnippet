@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+    <link rel="shortcut icon" href="https://princu09.github.io/nfwebbuilder/img/logo.png" type="image/png">
+
+    <!-- Custome Stylesheet Include Here -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- PrismJS Stylesheet Include Here -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- AngularJS Script Include Here -->
+    <script src="js/angular.min.js"></script>
+
+    <!-- PrismJS Script Include Here -->
+    <script src="js/prism.js"></script>
+
+
+    <!-- Bootstrap CDN Include Here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="my-4">
+        <p class="h2 font-weight-bold text-success text-center">Angular JS</p>
+        <p class="h6 font-weight-bold text-success text-center">Get Code Easily</p>
+    </div>
+
+    <div class="container accordion my-5" id="angularDataCode">
+        <div class="card">
+            <div class="card-header" id="startTemplate">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#startTemplate2" aria-expanded="false" aria-controls="startTemplate2">
+                        Start Template
+                    </button>
+                </h2>
+            </div>
+            <div id="startTemplate2" class="collapse" aria-labelledby="startTemplate" data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-html">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app=""&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Enter Your Title Here&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Direct Print Data Using {{}} --&gt;
+    {{ "Hello World" }}
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="helloWorld">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#helloWorld2" aria-expanded="false" aria-controls="helloWorld2">
+                        Hello World
+                    </button>
+                </h2>
+            </div>
+            <div id="helloWorld2" class="collapse" aria-labelledby="helloWorld" data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-markup">
+<code>{{ "Hello World!" }}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="dataBinding">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#dataBinding2" aria-expanded="false" aria-controls="dataBinding2">
+                        Data Binding > Show Text Only
+                    </button>
+                </h2>
+            </div>
+            <div id="dataBinding2" class="collapse" aria-labelledby="dataBinding" data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-markup">
+<code>&lt;!-- First Example --&gt;
+&lt;input type="text" ng-model="number"&gt;
+&lt;p&gt;{{"The Number is : " + number}}&lt;/p&gt;
+
+&lt;!-- Second Example --&gt;
+&lt;input type="text" ng-model="number"&gt;
+&lt;p&gt;The Number is : &lt;span ng-bind="number"&gt; &lt;/span&gt;&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="dataBindingForChangeFont">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#dataBindingForChangeFont2" aria-expanded="false"
+                        aria-controls="dataBindingForChangeFont2">
+                        Data Binding > Change Font Size
+                    </button>
+                </h2>
+            </div>
+            <div id="dataBindingForChangeFont2" class="collapse" aria-labelledby="dataBindingForChangeFont"
+                data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-markup">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app=""&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Angular JS&lt;/title&gt;
+    &lt;script src="js/angular.min.js"&gt;&lt;/script&gt;
+
+    &lt;style&gt;
+        p{
+            font-size: {{number}}px;
+        }
+        span{
+            color: #666;
+            font-weight: 600;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;span&gt;Min Font Size is 12px&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="number" min="12" ng-model="number"&gt;
+    &lt;p&gt; Change This Text Size&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="dataBindingForBGColor">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#dataBindingForBGColor2" aria-expanded="false"
+                        aria-controls="dataBindingForBGColor2">
+                        Data Binding > Change Background Color
+                    </button>
+                </h2>
+            </div>
+            <div id="dataBindingForBGColor2" class="collapse" aria-labelledby="dataBindingForBGColor"
+                data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-markup">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app=""&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Angular JS&lt;/title&gt;
+    &lt;script src="js/angular.min.js"&gt;&lt;/script&gt;
+
+    &lt;style&gt;
+        body{
+            background : {{color}};
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;span&gt;Change background color : Enter Color Name or code here&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="text" ng-model="color"&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="declareVariable">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#declareVariable2" aria-expanded="false" aria-controls="declareVariable2">
+                        Declare Variable and Print
+                    </button>
+                </h2>
+            </div>
+            <div id="declareVariable2" class="collapse" aria-labelledby="declareVariable"
+                data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-html">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app=""&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Angular JS&lt;/title&gt;
+    &lt;script src="js/angular.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div ng-init="firstName='Angular'; lastName='JS'; website='https://angularjs.org/'; "&gt;
+        {{"First Name : " +  firstName + " | Last Name : " + lastName}}
+        &lt;br&gt;
+        &lt;a href="{{website}}"&gt;AngularJS Website&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="forLoop">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#forLoop2" aria-expanded="false" aria-controls="forLoop2">
+                        ForLoop
+                    </button>
+                </h2>
+            </div>
+            <div id="forLoop2" class="collapse" aria-labelledby="forLoop" data-parent="#angularDataCode">
+                <div class="card-body">
+                    <pre class="language-html">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app=""&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Angular JS&lt;/title&gt;
+    &lt;script src="js/angular.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div ng-init="details=['Prince Patel' , '19' , 'Python Developer' , 'https://princu09.github.io/']"&gt;
+        &lt;p ng-repeat="i in details"&gt;{{i}}&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p class="text-center" style="font-weight: 600; color:#333; font-size: 0.9rem;">
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script> &copy; Created By NF Web Developer
+        </p>
+    </footer>
+</body>
+
+</html>

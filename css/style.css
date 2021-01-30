@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 50rem;
+}
+
+.list-group-item {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.toolbar-item {
+    color: #fff;
+}
+
+div.code-toolbar>.toolbar {
+    opacity: 1 !important;
+}
+
+.card-header,
+.card-body {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.btn-dark {
+    text-decoration: none;
+}
+
+.btn-dark:hover {
+    text-decoration: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.btn-dark.focus,
+.btn-dark:focus {
+    text-decoration: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
